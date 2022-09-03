@@ -3,41 +3,41 @@
   <head>
     <title>Интерактив</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: lightcoral;
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: lightcoral;
+      }
 
+      div {
+        text-align: center;
+      }
+
+      button {
+        border: 1px solid black;
+        padding: 15px 20px;
+        border-radius: 20px;
+        background: transparent;
+        cursor: pointer;
+        outline: none;
+      }
+
+      h1,
+      h3 {
+        animation: down 1s;
+      }
+
+      @keyframes down {
+        from {
+          transform: translateY(-50px);
         }
 
-        div {
-            text-align: center;
+        to {
+          transform: translateY(0);
         }
-
-        button {
-          border: 1px solid black;
-          padding: 15px 20px;
-          border-radius: 20px;
-          background: transparent;
-          cursor: pointer;
-          outline: none;
-        }
-
-        h1, h3 {
-          animation: down 1s;
-        }
-
-        @keyframes down {
-            from {
-              transform: translateY(-50px);
-            }
-
-            to {
-              transform: translateY(0);
-            }
-        }
+      }
     </style>
   </head>
   <body>
